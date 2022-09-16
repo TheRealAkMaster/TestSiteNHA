@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tandartsafspraak</title>
+  </head>
+  <body>
+    <h1>Tandartsafspraak</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget porttitor velit, ac faucibus risus. Integer faucibus interdum lorem. Curabitur porta lacus eu diam lacinia varius. Aliquam at turpis ut dolor euismod facilisis. Etiam eu lacinia ipsum. Integer vehicula maximus congue. Sed tortor risus, egestas eget pellentesque sed, malesuada in felis. Praesent tristique tellus eget neque accumsan venenatis. Vestibulum commodo, neque vitae congue vestibulum, risus elit finibus erat, a bibendum mi mi sit amet tellus. Curabitur et porttitor risus. Cras gravida lacus vitae mauris vulputate semper. Duis sapien velit, hendrerit eget blandit vitae, consequat eu sem. Sed sed nibh tellus. </p>
+
+    <h3> Afbeeldingen van tandartsen </h3>
+      <img src="../afbeeldingen/tandarts1.png"
+        height="300" width="300"
+        alt="Afbeelding van een tandarts" title="Een tandarts">
+      <img src="../afbeeldingen/tandarts2.png"
+        height="300" width="300"
+        alt="Afbeelding van een tandarts" title="Een tandarts">
+      <img src="../afbeeldingen/tandarts3.png"
+        height="300" width="300"
+        alt="Afbeelding van een tandarts" title="Een tandarts">
+
+<h2>Afspraak Formulier</h2>
+<form method="post" action="https://formspree.io/f/xnqrqdrw">
+  <fieldset>
+    <legend><b>Persoonlijke gegevens</b></legend> <br>
+    <label for="Naam">Naam: &nbsp; &nbsp; </label>
+    <input id="Naam" type="text" name="Naam">
+    <br><br>
+    <input type="radio" name="Geslacht" value="Man" checked>Man
+    <input type="radio" name="Geslacht" value="Vrouw">Vrouw
+    <input type="radio" name="Geslacht" value="Anders">Anders
+    <br><br>
+    <label for="Adres">Adres: &nbsp; &nbsp; </label>
+    <input id="Adres" type="text" name="Adres">
+    <br><br>
+    <label for="Postcode">Postcode: &nbsp; &nbsp; </label>
+    <input id="Postcode" type="text" name="Postcode">
+    <br><br>
+    <label for="Woonplaats">Woonplaats: &nbsp; &nbsp; </label>
+    <input id="Woonplaats" type="text" name="Woonplaats">
+  </fieldset>
+
+  <fieldset>
+    <legend><b>Beschijving van de klachten</b></legend> <br>
+    <label for="onderwerpen">Onder welke categorie valt uw kalcht? &nbsp; &nbsp;</label>
+    <input type="checkbox" name="onderwerpen" value="Hoofdpijn">Hoofdpijn
+    <input type="checkbox" name="onderwerpen" value="Buikpijn">Buikpijn
+    <input type="checkbox" name="onderwerpen" value="Bot breuk">Bot breuk
+    <input type="checkbox" name="onderwerpen" value="Anders">Anders <br> <br>
+
+    <label for="foto">Plaats hier een foto van uw klacht: &nbsp; &nbsp; </label>
+    <input id="foto" type="file" name="Bestand" accept="image/jpeg,image/x-png,image/gif" >
+  </fieldset>
+
+  <fieldset>
+    <legend><b>Toelichting van de klachten</b></legend> <br>
+    <label for="Bericht">Type hier uw toelichting: &nbsp; &nbsp; </label>
+    <textarea id="Bericht" name="Bericht" maxlength="1500" rows="4" cols="125"></textarea><br> <br>
+    <label for="Datum">Kies uw afspraak moment: &nbsp; &nbsp; </label>
+    <input type="date" name="Datum">
+  </fieldset> <br>
+
+  <button type="submit" name="verzendknop"><strong>Verzend</strong></button>
+</form>
+  </body>
+</html>
