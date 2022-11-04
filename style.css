@@ -9,7 +9,7 @@ li{ display: block; margin-right: 40px;}
 .contentL{height: 745px;}
 .contentL2{height: 750px;}
 .footer{margin-top: 1850px;}
-.footer2{margin-top: 2100px;}
+.footer2{margin-top: 2150px;}
 }
 @media only screen and (min-width: 630px) {
     .contentL{height: 800px;}
